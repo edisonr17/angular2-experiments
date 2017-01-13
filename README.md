@@ -16,12 +16,11 @@ Installation
 - git install 
 
 
-1- angular 2 configuration and angular-cli installation. \n
-2- Databinding in form. \n
-    [(ngModel)]  => model name in an input \n
-    [src] => \n
-3- Bootstrap implementation. \n
-4- My first method - 
-    /**
+- angular 2 configuration and angular-cli installation. 
+- Databinding in form. 
+    [(ngModel)]  => model name in an input 
+    [src] => 
+- Bootstrap implementation. 
+- My first method  
     * Este método nos devuelve el enunciado y el resultado de la suma de 2 números aleatoreos generados con javascript 
-    */
+    
