@@ -17,6 +17,6 @@ import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent,HolaMundoComponent]
+  bootstrap: [AppComponent, HolaMundoComponent]
 })
 export class AppModule { }

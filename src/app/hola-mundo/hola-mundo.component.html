@@ -1,13 +1,14 @@
-<p>
-  hola-mundo works!
+<div class='row'>
+    <p>
+    hola-mundo works!
+    This is my first controller 
+    <br>{{message}}
+    </p>  
+</div>
 
-  This is my first controller 
-  <br>{{message}}
-</p>
-
-<div>
+<div class='row'>
+  <div>Images</div>
   <form>
-    <input type='text' name='ensayo' [(ngModel)]="message" placeholder='Cambia el mensaje' >
+    <input class='form-control' type='text' name='ensayo' [(ngModel)]="message" placeholder='Cambia el mensaje' >
   </form>
-
 </div>
