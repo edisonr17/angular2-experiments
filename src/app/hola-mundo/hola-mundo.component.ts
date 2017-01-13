@@ -13,6 +13,17 @@ export class HolaMundoComponent implements OnInit {
   }
 
   ngOnInit() {
+  
   }
+
+  /**
+  * Este método nos devuelve el enunciado y el resultado de la suma de 2 números aleatoreos generados con javascript 
+  */
+  suma(){
+    var x = Math.floor(Math.random() * 6);
+    var y = Math.floor(Math.random() * 6);
+    alert(x + " + " + y + " = " + (x + y));
+  }
+  
 
 }
