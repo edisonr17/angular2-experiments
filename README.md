@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Practice
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
@@ -29,3 +30,7 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# angular2-experiments
+ Repository for academic and learning angular purposes 2
+>>>>>>> a7881c0277785a7a5df52a38b9e78b4fb6d0b710
