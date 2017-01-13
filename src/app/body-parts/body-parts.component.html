@@ -1,0 +1,24 @@
+<div class='row col-lg-4 col-lg-offset-4' >
+  <timepicker [(ngModel)]="mytime"></timepicker>
+
+
+  <ul>
+
+    <!--
+      simple
+      <li *ngFor='let bodyPart of bodyParts'>
+        
+      </li>
+    
+    -->
+
+    <!--Advance-->
+    <template ngFor let-bodyPart [ngForOf]="bodyParts" let-i="index" >
+      <li>
+          <h3>{{bodyPart.title}}</h3>
+          <img src="{{bodyPart.src}}" class="img-rounded" alt="Cinque Terre" width="80" height="80"> 
+      </li>
+    </template>
+  </ul>
+
+</div>

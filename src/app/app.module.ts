@@ -5,18 +5,24 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
+import { BodyPartsComponent } from './body-parts/body-parts.component';
+
+import { TimepickerModule } from 'ng2-bootstrap/timepicker';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HolaMundoComponent
+    HolaMundoComponent,
+    BodyPartsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    TimepickerModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent, HolaMundoComponent]
+  bootstrap: [AppComponent, HolaMundoComponent,BodyPartsComponent]
 })
 export class AppModule { }

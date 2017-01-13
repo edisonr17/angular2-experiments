@@ -6,24 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hola-mundo.component.css']
 })
 export class HolaMundoComponent implements OnInit {
-  message='This is my first databinding';
-  logo="https://upload.wikimedia.org/wikipedia/commons/3/3b/Battons-nous_avec_Tux.png"
+  
+ /**
+ * Propiedades
+ */
+  message = 'This is my first databinding';
+  logo = "https://upload.wikimedia.org/wikipedia/commons/3/3b/Battons-nous_avec_Tux.png"
+
+
+  
   constructor() {
      
   }
 
   ngOnInit() {
-  
-  }
+ 
+  };
 
   /**
   * Este método nos devuelve el enunciado y el resultado de la suma de 2 números aleatoreos generados con javascript 
   */
-  suma(){
-    var x = Math.floor(Math.random() * 6);
-    var y = Math.floor(Math.random() * 6);
+  sum(){
+    var x:number = Math.floor(Math.random() * 6);
+    var y:number = Math.floor(Math.random() * 6);
     alert(x + " + " + y + " = " + (x + y));
-  }
+  };
   
+ 
 
 }
