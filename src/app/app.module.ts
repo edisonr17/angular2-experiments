@@ -23,6 +23,6 @@ import { TimepickerModule } from 'ng2-bootstrap/timepicker';
     TimepickerModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent, HolaMundoComponent,BodyPartsComponent]
+  bootstrap: [AppComponent, HolaMundoComponent, BodyPartsComponent]
 })
 export class AppModule { }

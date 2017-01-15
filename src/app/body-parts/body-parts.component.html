@@ -1,24 +1,31 @@
-<div class='row col-lg-4 col-lg-offset-4' >
-  <timepicker [(ngModel)]="mytime"></timepicker>
+<section>
+  <div class='row col-lg-12' >
+    <form>
+      <h1>Add a body part</h1>
+      <div class='input-group'>
+        <input class='form-control' type='text' name='ensayo' [(ngModel)]="bodyPart" placeholder='Body part' >
+      </div>
+      <div class='input-group'>
+        <input class='form-control' type='url' name='ensayo' [(ngModel)]="url" placeholder='imagen' >
+      </div>
+      <button type='button' class='btn btn-primary' (click)="addItem(bodyPart,url);bodyPart='';url=''">Add</button>
+    </form>
+    <!-- <timepicker [(ngModel)]="mytime"></timepicker> -->
 
+      <!--
+        simple
+        <li *ngFor='let bodyPart of bodyParts'>
+          
+        </li>
+      
+      -->
 
-  <ul>
-
-    <!--
-      simple
-      <li *ngFor='let bodyPart of bodyParts'>
-        
-      </li>
-    
-    -->
-
-    <!--Advance-->
-    <template ngFor let-bodyPart [ngForOf]="bodyParts" let-i="index" >
-      <li>
-          <h3>{{bodyPart.title}}</h3>
-          <img src="{{bodyPart.src}}" class="img-rounded" alt="Cinque Terre" width="80" height="80"> 
-      </li>
-    </template>
-  </ul>
-
-</div>
+      <!--Advance-->
+      <template ngFor let-bodyPart [ngForOf]="bodyParts" let-i="index" >
+        <div class='row col-lg-4'>
+            <h3>{{bodyPart.title}}</h3>
+            <img src="{{bodyPart.src}}" class="img-rounded" alt="Cinque Terre" width="80" height="80"> 
+        </div>
+      </template>
+  </div>
+</section>

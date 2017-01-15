@@ -11,10 +11,9 @@ export class HolaMundoComponent implements OnInit {
  * Propiedades
  */
   message = 'This is my first databinding';
-  logo = "https://upload.wikimedia.org/wikipedia/commons/3/3b/Battons-nous_avec_Tux.png"
+  logo = "https://upload.wikimedia.org/wikipedia/commons/3/3b/Battons-nous_avec_Tux.png";
+ 
 
-
-  
   constructor() {
      
   }
