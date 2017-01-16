@@ -22,5 +22,10 @@ Learning
     *[src] => 
 - Bootstrap implementation. 
 - My first method  
-    * Este método nos devuelve el enunciado y el resultado de la suma de 2 números aleatoreos generados con javascript 
+    * Este método nos devuelve el enunciado y el resultado de la suma de 2 números aleatoreos generados con javascript.
+
+-Firebase implementation.
+-Basic Router demo.
+
+
     
