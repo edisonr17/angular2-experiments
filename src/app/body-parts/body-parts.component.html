@@ -20,12 +20,19 @@
       
       -->
 
-      <!--Advance-->
+      <!--Advance
       <template ngFor let-bodyPart [ngForOf]="bodyParts" let-i="index" >
         <div class='row col-lg-4'>
             <h3>{{bodyPart.title}}</h3>
             <img src="{{bodyPart.src}}" class="img-rounded" alt="Cinque Terre" width="80" height="80"> 
         </div>
-      </template>
+      </template>-->
+
+        <div class='row col-lg-4' *ngFor="let item of items | async">
+            <h3>{{item.title}}</h3>
+            <img src="{{item.src}}" class="img-rounded" alt="Cinque Terre" width="80" height="80"> 
+        </div>
+
+
   </div>
 </section>

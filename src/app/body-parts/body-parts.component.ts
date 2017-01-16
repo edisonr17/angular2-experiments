@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Http } from '@angular/http';
+import {AngularFire, FirebaseListObservable} from 'angularfire2';
+
 
  interface BodyParts {
       title: string;
@@ -15,15 +18,22 @@ export class BodyPartsComponent implements OnInit {
  bodyPart: string;
   url: string;
   urlBodyParts= "https://bodyparts-dba1f.firebaseio.com/";
+  
 
   private bodyParts: BodyParts[] = [];  
+  items: FirebaseListObservable<any[]>;
+  constructor(af: AngularFire) {
+    this.items = af.database.list('/');
+  }
+
 
   /**
   * Agregar o eliminar un item de un array código typescript 
   */
   addItem(title:string, src:string)
   {
-    this.bodyParts.push({title,src});
+    this.bodyParts.push({title,src}); 
+    this.items.push({title,src});
   }
 
   /**
@@ -38,7 +48,22 @@ export class BodyPartsComponent implements OnInit {
     }
   }
 
-  initialValues()
+  getBodyParts()
+  {
+   
+  }
+    /*this.http.get(this.urlBodyParts).subscribe(
+      response => {
+        let data = response.json();
+        console.log(data);
+      }  
+    );*/
+
+
+  
+
+  //Valores iniciales para el cuerpo humano.
+  /* initialValues()
   {
     this.bodyParts = [
     {title:'Head',src:"https://upload.wikimedia.org/wikipedia/commons/8/82/Camper_Measurements_on_human_male_head.jpg"}, 
@@ -46,19 +71,12 @@ export class BodyPartsComponent implements OnInit {
     {title:"Knees",src:"http://i.vimeocdn.com/video/569145007_1280x720.jpg"}, 
     {title:"Feet",src:"https://c1.staticflickr.com/6/5012/5526911792_136d501c61_b.jpg"}
     ];
-  }
+  }*/
 
-  
-  
-  constructor() {
-   
-
-
-  }
 
   ngOnInit() 
   {
-    this.initialValues();
+    this.getBodyParts();
   }
 
 
