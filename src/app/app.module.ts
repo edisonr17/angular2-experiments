@@ -1,15 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule, JsonpModule } from '@angular/http';
+import { HttpModule, Http, JsonpModule, RequestOptions } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 
 import { AppComponent } from './app.component';
-import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { BodyPartsComponent } from './body-parts/body-parts.component';
-import { routing } from './app.routing';
+import {routing} from './app.routing';
 
 import { TimepickerModule } from 'ng2-bootstrap/timepicker';
+import { SgloHeaderComponentComponent } from './components/mainComponents/sglo-header-component/sglo-header-component.component';
+import { GridComponentComponent } from './components/commonsComponents/grid-component/grid-component.component';
+
+import { SgloHomeComponentComponent } from './components/mainComponents/sglo-home-component/sglo-home-component.component';
+import { TranslateModule } from "ng2-translate";
+import { AsideComponentComponent } from './components/mainComponents/aside-component/aside-component.component';
+
+
+
+ 
+
+
 
 
 //Configuración para Firebase
@@ -26,9 +37,13 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HolaMundoComponent,
-    BodyPartsComponent
+    BodyPartsComponent,
+    SgloHeaderComponentComponent,
+    GridComponentComponent,
+    SgloHomeComponentComponent,
+    AsideComponentComponent
   ],
+
   imports: [
     BrowserModule,
     FormsModule,
@@ -36,7 +51,8 @@ export const firebaseConfig = {
     JsonpModule,
     routing,
     TimepickerModule.forRoot(),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    TranslateModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

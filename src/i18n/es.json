@@ -1,0 +1,28 @@
+{
+    "header":{
+        "home":"Inicio",
+        "configurations":{
+            "title":"Configuración",
+            "patients":"Pacientes"
+        },
+        "paraclinical":{
+            "title":"Paraclínicos",
+            "labs":"Laboratorios",
+            "images":"Imágenes"
+        },
+        "clinicalRecord":{
+            "title":"Historia Clínica",
+            "external":"Consulta Externa",
+            "medicalRecordReview":"Consulta de Revisión",
+            "emergency":"Emergencias",
+            "triaje":"Triaje",
+            "medicalRecordQuery":"Consultar Historias"
+        }
+    },
+    "footer":{
+
+    },
+    "commons":{
+
+    }
+}

@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+.divider {
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.panel-background{
+    background-color: #fafafa !important;
+}
+
+
+.float-aside{
+   margin-top:80px;
+    position: fixed;
+    width: 15%;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+
+}
+
+
+.center-modal {
+    margin-top:8%;    
+    position: fixed;
+    top: 40%;
+    z-index: 1050;
+}
+
+
+#cargando {
+    z-index:1500000000;
+    position: absolute;
+    text-align:center;
+    width: 100%;
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    background: white no-repeat center;
+}
+
+#gatos{
+    width: 100%;
+}
